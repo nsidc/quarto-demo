@@ -14,6 +14,8 @@ background-image: "https://images.pexels.com/photos/10294562/pexels-photo-102945
 
 📤 Focused on publishing: websites, books, PDFs, slide decks.
 
+✍️ Authoring in Markdown.
+
 
 ## Examples
 
