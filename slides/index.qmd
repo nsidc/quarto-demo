@@ -148,3 +148,5 @@ to GitHub Pages.
 
 
 # Fin
+
+We'd love suggestions on how to best present Quarto to a non-developer audience.
