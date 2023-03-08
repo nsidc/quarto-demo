@@ -32,6 +32,34 @@ background-image: "https://images.pexels.com/photos/10294562/pexels-photo-102945
 * Renders many output formats (_like this slide deck!_)
 
 
+## Output formats {.smaller}
+
+:::::: {.columns}
+
+::: {.column width="50%"}
+* Documents
+    * HTML
+    * PDF
+    * Word
+    * OpenOffice
+    * ePub
+* Presentations
+    * RevealJS (these slides)
+    * PowerPoint
+    * Beamer
+:::
+
+::: {.column width="50%"}
+* Markdown dialects
+* Wikis
+* Jupyter Notebooks
+* Org-Mode
+* [_Much more_](https://quarto.org/docs/output-formats/all-formats.html)
+:::
+
+::::::
+
+
 ## Quarto vs. Jupyter ecosystem
 
 * Quarto is focused on publishing to many formats (via Pandoc).
