@@ -1,6 +1,6 @@
 ---
 title: "Quarto Demo"
-image: "https://quarto.org/quarto.png"
+image: "https://quarto.org/favicon.svg"
 about:
   template: "jolla"
   links:
