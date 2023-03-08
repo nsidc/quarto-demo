@@ -1,0 +1,39 @@
+project:
+  type: "website"
+  # Slides aren't being hot-reloaded as expected. How to fix?
+  render:
+    - "**/*.qmd"
+    - "**/*.md"
+
+
+website:
+  title: "Quarto Demo"
+  site-url: "https://nsidc.github.io/quarto-demo"
+  repo-url: &repo-url "https://github.com/nsidc/quarto-demo"
+  repo-actions: ["edit", "issue"]
+
+  navbar:
+    left:
+      - text: "About"
+        file: "about.qmd"
+      - text: "Slide decks"
+        file: "slides.qmd"
+    right:
+      - icon: "github"
+        aria-label: "GitHub"
+        href: *repo-url
+
+  page-footer:
+    left: "Built with [Quarto](https://quarto.org/) ❤️"
+    right:
+      - text: "Code of Conduct"
+        href: "CODE_OF_CONDUCT.md"
+      - text: "License"
+        href: "LICENSE.md"
+
+
+format:
+  html:
+    theme: "cosmo"
+    css: "styles.css"
+    toc: true

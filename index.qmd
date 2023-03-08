@@ -1,0 +1,6 @@
+---
+title: "Quarto Demo"
+author: "Matt Fisher, Trey Stafford"
+---
+
+# 🛝 [Slides](slides/index.qmd) 

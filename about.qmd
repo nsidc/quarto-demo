@@ -1,0 +1,14 @@
+---
+title: "Quarto Demo"
+image: "https://quarto.org/quarto.png"
+about:
+  template: "jolla"
+  links:
+    - icon: "globe"
+      text: "Official site"
+      href: "https://quarto.org"
+---
+
+Quarto is a publishing tool that can output to various formats (using
+[Pandoc](https://pandoc.org)) and can execute code and display results (using
+[Jupyter](https://jupyter.org/)).

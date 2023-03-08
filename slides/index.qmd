@@ -1,0 +1,98 @@
+---
+title: "Quarto Demo"
+subtitle: "What does it do? Does it do things? Let's find out!"
+background-image: ""
+---
+
+# About
+
+## About Quarto
+
+⌨️ Written in TypeScript.
+
+❤️ Very responsive development team.
+
+_TODO: More!_
+
+
+## Quarto vs. Jupyter ecosystem
+
+* Quarto is focused on publishing to many formats (via Pandoc).
+    * Competes with JupyterBook, which is less mature.
+* Quarto uses Jupyter under the hood to perform computations.
+
+::: {.notes}
+I've opened four issues with Quarto so far, and community has been extremely
+supportive. Two bugs were fixed right away, one bug was scheduled for a future
+milestone, and the fourth was user error.
+:::
+
+
+## Quarto vs. Jupyter notebooks
+
+* Quarto uses Computational Markdown as its input format, so it's easier to
+  version-control.
+* ...?
+
+
+# Getting started
+
+## Installing
+
+You can install Quarto from `conda-forge`:
+
+```
+conda install -c conda-forge quarto
+mamba install -c conda-forge quarto
+```
+
+Or you can install from the [official
+sources](https://quarto.org/docs/download/) (Linux `.deb`/`.tar.gz`, Mac,
+Windows)
+
+
+## Creating a project
+
+```
+quarto create-project <project-name> --type=<website|book|default>
+```
+
+::: {.notes}
+Live demo this
+:::
+
+
+## Previewing your project
+
+```
+quarto preview
+```
+
+::: {.notes}
+Live demo this
+:::
+
+
+# Publish your project
+
+
+## GitHub Actions / GitHub Pages prep-work
+
+![GitHub Pages setup](/_media/github-pages-setup.png)
+
+::: {.notes}
+For simplicity, I prefer to use the "GitHub Actions" method rather than the
+"Deploy from a branch" method to keep my repository history free of output
+artifacts.
+:::
+
+
+## GitHub Action workflow definition
+
+Quarto provides out-of-the-box GitHub Actions you can use to publish for free
+to GitHub Pages.
+
+* Great for basic use cases.
+* You'll need custom actions if your Quarto document(s) require third-party libraries.
+
+[Example](https://github.com/nsidc/quarto-demo/blob/main/.github/workflows/publish-to-github-pages.yml)
