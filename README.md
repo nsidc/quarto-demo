@@ -29,6 +29,25 @@ quarto preview
 ```
 
 
+## Troubleshooting
+
+### Fails to render PDF, `tlmgr` doesn't exist
+
+```
+ERROR: Error executing '/home/mfisher/miniconda3/envs/quarto/bin/tlmgr': No such file or directory (os error 2)
+```
+
+My first instinct here was to install `texlive-core` from `conda-forge`, however that
+currently doesn't include a subdependency
+(https://github.com/conda-forge/texlive-core-feedstock/issues/27).
+
+The [recommended course of
+action](https://quarto.org/docs/output-formats/pdf-engine.html#installing-tex) is
+`quarto install tinytex`, however this is not friendly with conda installations. To get
+around this, we use the system install of Quarto, and install other dependencies with
+conda.
+
+
 ## License
 
 See [LICENSE](LICENSE).

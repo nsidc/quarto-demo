@@ -1,0 +1,11 @@
+name: quarto-demo
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  # - quarto ~=1.2.335
+  - jupyter ~=1.0.0
+
+  # For computations
+  - matplotlib
+  - numpy
