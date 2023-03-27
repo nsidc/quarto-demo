@@ -38,7 +38,10 @@ Pangeo Forge provides efficient, cloud-optimized access to large datasets.
 ### Using xarray
 
 Lets use `xarray` to access Pangeo Forge's [NOAA Coastwatch Geo-Polar
-SST](https://pangeo-forge.org/dashboard/feedstock/3) dataset.
+SST](https://pangeo-forge.org/dashboard/feedstock/3) dataset. This dataset was
+added to Pangeo Forge via a recipe maintained in a [pangeo-forge feedstock
+repository](https://github.com/pangeo-forge/noaa-coastwatch-geopolar-sst-feedstock)
+from data hosted at NOAA [@noaa_coastwatch_sst].
 
 ```{python}
 #| echo: true
