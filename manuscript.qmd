@@ -48,7 +48,7 @@ store = 'https://ncsa.osn.xsede.org/Pangeo/pangeo-forge/noaa-coastwatch-geopolar
 ds = xr.open_dataset(store, engine='zarr', chunks={})
 ```
 
-## Selecting data
+### Selecting data
 
 Lets select a slice (2012-09-16, the date of the record sea ice minimum per the Sea Ice index) out of the sea surface temperature (sst) variable.
 
@@ -57,7 +57,7 @@ Lets select a slice (2012-09-16, the date of the record sea ice minimum per the 
 sst_20120916 = ds.analysed_sst.sel(time='20120916', method='nearest')
 ```
 
-## Plotting data
+### Plotting data
 
 Now lets take a look at the data!
 
