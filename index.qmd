@@ -3,6 +3,16 @@ title: "Quarto Demo"
 author: "Matt Fisher, Trey Stafford"
 ---
 
+I ❤️ Quarto [-@fisher_stafford_2023]
+
+
 ### 🛝 [Slides](slides/index.qmd) 
 
+
 ### 📄 [Manuscript](manuscript.qmd)
+
+
+### References
+
+::: {#refs}
+:::

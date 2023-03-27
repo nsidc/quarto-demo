@@ -22,6 +22,13 @@ concurrency:
   cancel-in-progress: true
 
 
+# Default to bash in login mode
+# https://github.com/mamba-org/provision-with-micromamba#IMPORTANT
+defaults:
+  run:
+    shell: "bash -l {0}"
+
+
 jobs:
   # Build job
   build:
@@ -35,8 +42,16 @@ jobs:
         with:
           tinytex: true
 
-      - name: "Install dependencies"
-        run: "pip install jupyter"
+      # TODO: If we add a lock-file, uncomment:
+      # Rename lock file; mamba expects files ending in `-lock.yml` to have a different format :(
+      # https://github.com/mamba-org/mamba/issues/1209#issuecomment-1447546266
+      # - name: "HACK: Replace environment YAML with lockfile"
+      #   run: "mv environment-lock.yml environment.yml"
+
+      - name: "Install Conda environment"
+        uses: "mamba-org/provision-with-micromamba@main"
+        with:
+          cache-env: true
 
       - name: "Render"
         uses: "quarto-dev/quarto-actions/render@v2"
