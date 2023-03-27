@@ -22,7 +22,22 @@ nsidc@nsidc.org for more information.
 
 ## Usage
 
-### Run the slides
+### Install Quarto
+
+Do not install with Conda, or the tinytex extension will not install correctly. TODO:
+Open an issue in GitHub about this.
+
+Please use an [official package](https://quarto.org/docs/download/).
+
+
+#### Install tinytex for PDF rendering
+
+```
+quarto install tinytex
+```
+
+
+### Preview the output
 
 ```
 quarto preview
