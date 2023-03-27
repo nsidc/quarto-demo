@@ -1,0 +1,32 @@
+---
+title: "Manuscript"
+author: "Matt Fisher, Trey Stafford"
+format:
+  # HTML must be first, or it won't properly render the code output.
+  # TODO: Open an issue against Quarto!
+  html:
+    execute:
+      echo: true
+  pdf:
+    toc: true
+    execute:
+      echo: false
+---
+
+## I'm a manuscript and I'm OK
+
+```{python}
+import matplotlib.pyplot as plt
+import numpy as np
+
+t = np.arange(0.0, 5.0, 0.01)
+s = np.cos(2 * np.pi * t)
+
+line = plt.plot(t, s, lw=2)
+plt.show()
+```
+
+
+## I'm black and white and read all day
+
+Lorem ipsum

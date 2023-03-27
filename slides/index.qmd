@@ -99,6 +99,11 @@ Or you can install from the [official
 sources](https://quarto.org/docs/download/) (Linux `.deb`/`.tar.gz`, Mac,
 Windows)
 
+::: {.callout-warning}
+Use the official sources if you're rendering to PDF. See the README of this repo for
+details!
+:::
+
 
 ## Creating a project
 
