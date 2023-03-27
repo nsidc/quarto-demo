@@ -30,3 +30,13 @@ plt.show()
 ## I'm black and white and read all day
 
 Lorem ipsum
+
+## Pangeo-Forge
+
+```{python}
+import xarray as xr
+
+store = 'https://ncsa.osn.xsede.org/Pangeo/pangeo-forge/noaa-coastwatch-geopolar-sst-feedstock/noaa-coastwatch-geopolar-sst.zarr'
+ds = xr.open_dataset(store, engine='zarr', chunks={})
+ds
+```
