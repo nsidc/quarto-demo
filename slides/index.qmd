@@ -105,18 +105,16 @@ details!
 :::
 
 
-## Creating a project
+## Working on a project
+
+### Create a project
 
 ```
 quarto create-project <project-name> --type=<website|book|default>
 ```
 
-::: {.notes}
-Live demo this
-:::
 
-
-## Previewing your project
+### Preview your project
 
 ```
 quarto preview
@@ -128,7 +126,6 @@ Live demo this
 
 
 # Publish your project
-
 
 ## GitHub Actions / GitHub Pages prep-work
 
@@ -150,6 +147,20 @@ to GitHub Pages.
 * You'll need custom actions if your Quarto document(s) require third-party libraries.
 
 [Example](https://github.com/nsidc/quarto-demo/blob/main/.github/workflows/publish-to-github-pages.yml)
+
+
+# Quarto for QGreenland workshops
+
+* [Educator workshop](qgreenland-workshop-2023-educator.github.io/)
+
+* [Researcher workshop](qgreenland-workshop-2023-researcher.github.io/)
+
+
+## Relatively simple for non-technical users
+
+We set up the educator workshop GitHub repo with GitHub actions, then our
+team's education expert set to work on creating a beautiful site through the
+GitHub web interface.
 
 
 # Fin
