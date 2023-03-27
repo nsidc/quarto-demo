@@ -5,6 +5,7 @@ project:
     - "**/*.qmd"
     - "**/*.md"
 
+bibliography: "references.bib"
 
 website:
   title: "Quarto Demo"
