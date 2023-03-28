@@ -167,9 +167,9 @@ to GitHub Pages.
 
 # Quarto for QGreenland workshops
 
-* [Educator workshop](qgreenland-workshop-2023-educator.github.io/)
+* [Educator workshop](https://qgreenland-workshop-2023-educator.github.io/)
 
-* [Researcher workshop](qgreenland-workshop-2023-researcher.github.io/)
+* [Researcher workshop](https://qgreenland-workshop-2023-researcher.github.io/)
 
 
 ## Relatively simple for non-technical users
