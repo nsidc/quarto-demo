@@ -54,7 +54,7 @@ jobs:
           cache-env: true
 
       - name: "Render"
-        uses: "quarto-dev/quarto-actions/render@v2"
+        run: "quarto render"
 
       - name: "Upload artifact"
         uses: "actions/upload-pages-artifact@v1"
