@@ -23,10 +23,10 @@ website:
         file: "manuscript.qmd"
       - text: "Interactivity"
         file: "interactive.qmd"
-      - text: "Caveats"
-        file: "caveats.qmd"
       - text: "Announcements"
         file: "announcements/index.qmd"
+      - text: "Caveats"
+        file: "caveats.qmd"
     right:
       - icon: "github"
         aria-label: "GitHub"
