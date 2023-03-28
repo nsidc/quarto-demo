@@ -4,6 +4,8 @@
   feedback/requests.
 * Using Python 3.11, you will receive `Debugger warning: It seems that frozen
   modules are being used, ...`
+* Figure captions are finicky. Sometimes the figure caption will not render. See
+  [https://github.com/quarto-dev/quarto-cli/issues/3525](https://github.com/quarto-dev/quarto-cli/issues/3525).
 
 
 ## PDF Rendering
