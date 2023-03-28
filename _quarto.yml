@@ -25,6 +25,8 @@ website:
         file: "interactive.qmd"
       - text: "Caveats"
         file: "caveats.qmd"
+      - text: "Announcements"
+        file: "announcements/index.qmd"
     right:
       - icon: "github"
         aria-label: "GitHub"
