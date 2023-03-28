@@ -18,6 +18,12 @@ background-image: "https://images.pexels.com/photos/10294562/pexels-photo-102945
 
 ✍️ Authoring in Markdown.
 
+::: {.notes}
+I've opened four issues with Quarto so far, and community has been extremely
+supportive. Two bugs were fixed right away, one bug was scheduled for a future
+milestone, and the fourth was user error.
+:::
+
 
 ## Examples
 
@@ -69,12 +75,6 @@ background-image: "https://images.pexels.com/photos/10294562/pexels-photo-102945
 * Quarto is focused on publishing to many formats (via Pandoc).
     * Competes with JupyterBook, which is less mature.
 * Quarto uses Jupyter under the hood to perform computations.
-
-::: {.notes}
-I've opened four issues with Quarto so far, and community has been extremely
-supportive. Two bugs were fixed right away, one bug was scheduled for a future
-milestone, and the fourth was user error.
-:::
 
 
 ## Quarto vs. Jupyter notebooks
