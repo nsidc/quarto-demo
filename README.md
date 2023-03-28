@@ -7,6 +7,11 @@
 
 What is Quarto? How can I use it?
 
+[`quarto`](https://quarto.org/) is used to generate the [demo
+website](https://nsidc.github.io/quarto-demo/) from this
+repository via [GitHub Actions](.github/workflows/publish-to-quarto-website.yml)
+on pushes to the `main` branch.
+
 
 ## Level of Support
 
