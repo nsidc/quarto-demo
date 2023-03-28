@@ -180,3 +180,5 @@ GitHub web interface.
 # Fin
 
 We'd love suggestions on how to best present Quarto to a non-developer audience.
+
+Read more about [caveats](/caveats.html)!
