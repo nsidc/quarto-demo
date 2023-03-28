@@ -107,6 +107,9 @@ details!
 
 ## Working on a project
 
+[Project Basics doc](https://quarto.org/docs/projects/quarto-projects.html)
+
+
 ### Create a project
 
 ```
@@ -114,7 +117,18 @@ quarto create-project <project-name> --type=<website|book|default>
 ```
 
 
+### Render your project
+
+Turn your markdown files into your desired output format(s).
+
+```
+quarto render
+```
+
+
 ### Preview your project
+
+Render your project & serve it with a hot-reloading webserver!
 
 ```
 quarto preview
