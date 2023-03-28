@@ -2,6 +2,8 @@
 
 * Quarto is _new_, but it's moving fast and the dev team is very responsive to
   feedback/requests.
+* Using Python 3.11, you will receive `Debugger warning: It seems that frozen
+  modules are being used, ...`
 
 
 ## PDF Rendering
