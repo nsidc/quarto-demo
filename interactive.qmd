@@ -1,0 +1,14 @@
+# Interactivity
+
+We can do more things in HTML-land than we can in PDF-land, like using Jupyter's
+interactive features. We can inspect the Pangeo Forge [@noaa_coastwatch_sst]
+dataset in this way.
+
+```{python}
+#| echo: true
+import xarray as xr
+
+store = 'https://ncsa.osn.xsede.org/Pangeo/pangeo-forge/noaa-coastwatch-geopolar-sst-feedstock/noaa-coastwatch-geopolar-sst.zarr'
+ds = xr.open_dataset(store, engine='zarr', chunks={})
+ds
+```

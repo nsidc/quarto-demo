@@ -19,6 +19,10 @@ website:
         file: "about.qmd"
       - text: "Slide decks"
         file: "slides.qmd"
+      - text: "Manuscript"
+        file: "manuscript.qmd"
+      - text: "Interactivity"
+        file: "interactive.qmd"
     right:
       - icon: "github"
         aria-label: "GitHub"
