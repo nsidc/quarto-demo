@@ -16,6 +16,8 @@ format:
 ## I'm a manuscript and I'm OK
 
 ```{python}
+#| label: fig-matplotlib-example
+#| fig-cap: "Plot data with matplotlib"
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -45,6 +47,9 @@ from data hosted at NOAA [@noaa_coastwatch_sst].
 
 ```{python}
 #| echo: true
+#| label: fig-pangeo-forge-example
+#| fig-cap: "This code was taken directly from the Pangeo Forge website."
+
 import xarray as xr
 
 store = 'https://ncsa.osn.xsede.org/Pangeo/pangeo-forge/noaa-coastwatch-geopolar-sst-feedstock/noaa-coastwatch-geopolar-sst.zarr'
@@ -56,18 +61,28 @@ ds = xr.open_dataset(store, engine='zarr', chunks={})
 Lets select a slice (2012-09-16, the date of the record sea ice minimum per the Sea Ice index) out of the sea surface temperature (sst) variable.
 
 ```{python}
+#| label: fig-select-data
+#| fig-cap: "Select the data."
 #| echo: true
+
 sst_20120916 = ds.analysed_sst.sel(time='20120916', method='nearest')
 ```
+
+
 
 ### Plotting data
 
 Now lets take a look at the data!
 
 ```{python}
+#| label: fig-plot-image
+#| fig-cap: "Plot the results."
 #| echo: true
 import matplotlib.pyplot as plt
 
 img = sst_20120916.plot.imshow()
 plt.show()
 ```
+
+Remember how we already plotted some data with matplotlib earlier? See
+@fig-matplotlib-example!
