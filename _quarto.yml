@@ -43,6 +43,7 @@ website:
 
 format:
   html:
-    theme: "cosmo"
-    css: "styles.css"
+    theme:
+      light: ["flatly", "styles.css"]
+      dark: ["darkly", "styles.css"]
     toc: true
