@@ -1,0 +1,12 @@
+# Caveats
+
+* Quarto is _new_, but it's moving fast and the dev team is very responsive to
+  feedback/requests.
+
+
+## PDF Rendering
+
+* Requires a LaTeX distribution; [read
+  more](https://quarto.org/docs/output-formats/pdf-engine.html).
+* Won't work with interactive features Jupyter supports, like interactive
+  representation of objects (e.g. Xarray).
