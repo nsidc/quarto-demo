@@ -30,3 +30,44 @@ plt.show()
 ## I'm black and white and read all day
 
 Lorem ipsum
+
+## Pangeo-Forge
+
+Pangeo Forge provides efficient, cloud-optimized access to large datasets.
+
+### Using xarray
+
+Lets use `xarray` to access Pangeo Forge's [NOAA Coastwatch Geo-Polar
+SST](https://pangeo-forge.org/dashboard/feedstock/3) dataset. This dataset was
+added to Pangeo Forge via a recipe maintained in a [pangeo-forge feedstock
+repository](https://github.com/pangeo-forge/noaa-coastwatch-geopolar-sst-feedstock)
+from data hosted at NOAA [@noaa_coastwatch_sst].
+
+```{python}
+#| echo: true
+import xarray as xr
+
+store = 'https://ncsa.osn.xsede.org/Pangeo/pangeo-forge/noaa-coastwatch-geopolar-sst-feedstock/noaa-coastwatch-geopolar-sst.zarr'
+ds = xr.open_dataset(store, engine='zarr', chunks={})
+```
+
+### Selecting data
+
+Lets select a slice (2012-09-16, the date of the record sea ice minimum per the Sea Ice index) out of the sea surface temperature (sst) variable.
+
+```{python}
+#| echo: true
+sst_20120916 = ds.analysed_sst.sel(time='20120916', method='nearest')
+```
+
+### Plotting data
+
+Now lets take a look at the data!
+
+```{python}
+#| echo: true
+import matplotlib.pyplot as plt
+
+img = sst_20120916.plot.imshow()
+plt.show()
+```

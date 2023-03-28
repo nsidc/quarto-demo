@@ -11,3 +11,10 @@ dependencies:
   # For computations
   - matplotlib
   - numpy
+  - xarray
+  - zarr
+  - fsspec
+  - aiohttp
+  - requests
+  - cftime
+  - dask
