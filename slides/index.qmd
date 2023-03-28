@@ -1,6 +1,6 @@
 ---
 title: "Quarto Demo"
-subtitle: "What does it do? Does it do things? Let's find out!"
+subtitle: "What does it do? Does it do things? Let's find out! 🐴"
 background-image: "https://images.pexels.com/photos/10294562/pexels-photo-10294562.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
 ---
 
