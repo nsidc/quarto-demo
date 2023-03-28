@@ -7,6 +7,7 @@
 ## PDF Rendering
 
 * Requires a LaTeX distribution; [read
-  more](https://quarto.org/docs/output-formats/pdf-engine.html).
+  more](https://quarto.org/docs/output-formats/pdf-engine.html). This will
+  cause challenges when installing Quarto with Conda.
 * Won't work with interactive features Jupyter supports, like interactive
   representation of objects (e.g. Xarray).
