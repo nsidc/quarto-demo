@@ -1,11 +1,21 @@
 # Caveats
 
+::: {.callout-note}
+This list of caveats is incomplete. PRs accepted 😀
+:::
+
 * Quarto is _new_, but it's moving fast and the dev team is very responsive to
   feedback/requests.
 * Using Python 3.11, you will receive `Debugger warning: It seems that frozen
   modules are being used, ...`
 * Figure captions are finicky. Sometimes the figure caption will not render. See
   [https://github.com/quarto-dev/quarto-cli/issues/3525](https://github.com/quarto-dev/quarto-cli/issues/3525).
+
+
+## Hot reloading `preview` server
+
+* Sometimes output directories (`.quarto`, `_site`) need to be deleted, e.g.
+  when changing branches.
 
 
 ## PDF Rendering
